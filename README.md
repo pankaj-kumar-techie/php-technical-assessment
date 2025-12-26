@@ -10,10 +10,13 @@ A technical assessment project demonstrating PHP and Laravel skills, along with 
 ## Setup and Run
 
 ### Laravel Project (backend-registration)
-1. Navigate to `backend-registration/`.
-2. Run `./setup.sh` to set up Docker environment.
-3. Access at `http://localhost:8000`.
-4. Run tests: `docker-compose exec app php artisan test`.
+1. Clone the repository and navigate to `backend-registration/`.
+2. Copy environment file: `cp .env.example .env`
+3. Build and start containers: `docker-compose up -d --build`
+4. Install dependencies: `docker-compose exec app composer install`
+5. Generate app key: `docker-compose exec app php artisan key:generate`
+6. Run migrations: `docker-compose exec app php artisan migrate`
+7. Access the app at `http://localhost:8000`
 
 ### RDBMS Analysis (rdbms-analysis)
 - Run `query.sql` in a MySQL database to create tables, insert data, and execute the analysis query.
