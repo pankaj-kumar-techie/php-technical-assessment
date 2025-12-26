@@ -1,0 +1,6 @@
+customer_id,name,email,total_spent
+7,"Jane Smith",jane@example.com,13000.75
+8,"Olivia Yellow",olivia@example.com,10000.00
+5,"Alice Blue",alice@example.com,5200.25
+2,"Bob Brown",bob@example.com,4700.75
+3,"John Doe",john@example.com,3900.50
